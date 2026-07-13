@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.venv/
+venv/
+.DS_Store
+
+# NOTE: chroma_db/ is intentionally NOT ignored — we commit the
+# pre-built vector index so the deployed app doesn't need to rebuild
+# embeddings (and download the embedding model) on cold start.
